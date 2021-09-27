@@ -1,0 +1,109 @@
+<div class="fk-header">
+    <div class="fk-header-inner">
+        <div class="fk-header-heading">
+            <h1><a href="" class="fk-header-logo" title="前往露天拍賣首頁"></a></h1>
+            <div class="fk-header-total-items">
+                <div class="fk-header-total-items-icon"></div>
+                <div class="fk-header-total-items-count">{{ totalItems | number}}</div>
+                <div>件商品</div>
+            </div>
+        </div>
+        <div class="fk-header-search-panel">
+            <div class="fk-header-search-box">
+                <input id="searchInput" #searchInput type="text" class="fk-header-search-input" placeholder="搜尋露天拍賣商品"
+                    [(ngModel)]="searchKey" (ngModelChange)="searchInputChange()" (focus)="searchInputFocus()"
+                    (blur)="searchInputBlur()">
+                <div *ngIf="searchKey != '' && isSearchInputFocus" class="fk-header-search-keyword-list">
+                    <div class="fk-header-search-keyword-items" *ngFor="let item of searchItems">
+                        <a href="">{{item}}</a>
+                    </div>
+                </div>
+                <div class="fk-header-search-select-wrap">
+                    <select class="fk-header-search-select" [(ngModel)]="searchMode">
+                        <option value="0">搜全站</option>
+                        <option value="1">搜帳號</option>
+                    </select>
+                    <i class="fa fa-angle-down"></i>
+                </div>
+                <div type="button" (click)="searchBtnClick()" class="fk-header-search-dropdown-icon">
+                </div>
+            </div>
+            <div class="fk-header-hot-search">
+                <ul class="fk-header-hot-search-ul">
+                    <li *ngFor="let item of hotSearchItems"
+                        class="fk-header-hot-search-li">
+                        <a href="">{{item}}</a></li>
+                </ul>
+            </div>
+        </div>
+        <ul class="fk-header-nav-ul">
+            <li class="fk-header-nav-li">
+                <div class="fk-header-dropdown-wrap"
+                    (mouseenter)="sellTagEnter()"
+                    (mouseleave)="sellTagLeave()">
+                    <div class="fk-header-sell-icon"></div>
+                    <div class="fk-header-dropdown-label">賣東西</div>
+                    <div *ngIf="sellTagHover" 
+                        class="fk-header-dropdown">
+                        <ul class="fk-header-dropdown-ul">
+                            <li class="fk-header-dropdown-li">單品上架</li>
+                            <li class="fk-header-dropdown-li">書籍 ISBN 上架</li>
+                            <li class="fk-header-dropdown-li">超簡易上架</li>
+                            <li class="fk-header-dropdown-li">Excel 上架</li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="fk-header-nav-li">
+                <div class="fk-header-dropdown-wrap"
+                    (mouseenter)="mybidTagEnter()"
+                    (mouseleave)="mybidTagLeave()">
+                    <div class="fk-header-mybid-icon"></div>
+                    <div class="fk-header-dropdown-label">我的拍賣</div>
+                    <div *ngIf="mybidTagHover" 
+                        class="fk-header-dropdown">
+                        <div class="fk-header-dropdown-gird">
+                            <div class="fk-header-dropdown-gird-item">
+                                <h3 class="fk-header-dropdown-title">買家</h3>
+                                <ul class="fk-header-dropdown-ul">
+                                    <li class="fk-header-dropdown-li">待結帳</li>
+                                    <li class="fk-header-dropdown-li">已購買</li>
+                                    <li class="fk-header-dropdown-li">追蹤中</li>
+                                    <li class="fk-header-dropdown-li">我的優惠券</li>
+                                </ul>
+                            </div>
+                            <div class="fk-header-dropdown-gird-item">
+                                <h3 class="fk-header-dropdown-title">賣家</h3>
+                                <ul class="fk-header-dropdown-ul">
+                                    <li class="fk-header-dropdown-li">賣家中心</li>
+                                    <li class="fk-header-dropdown-li">訂單管理</li>
+                                    <li class="fk-header-dropdown-li">商品管理</li>
+                                    <li class="fk-header-dropdown-li">收款管理中心</li>
+                                    <li class="fk-header-dropdown-li">計費中心</li>
+                                    <li class="fk-header-dropdown-li">錢進趨勢</li>
+                                    <li class="fk-header-dropdown-li">購買廣告</li>                                    
+                                </ul>
+                            </div>
+                        </div>        
+                    </div>
+                </div>
+            </li>
+            <li class="fk-header-nav-li">
+                <div class="fk-header-dropdown-wrap"
+                    (mouseenter)="messagerTagEnter()"
+                    (mouseleave)="messagerTagLeave()">
+                    <div class="fk-header-messager-icon"></div>
+                    <div class="fk-header-dropdown-label">露露通</div>
+                    </div>
+            </li>
+            <li class="fk-header-nav-li">
+                <div class="fk-header-dropdown-wrap"
+                    (mouseenter)="cartTagEnter()"
+                    (mouseleave)="cartTagLeave()">
+                    <div class="fk-header-cart-icon"></div>
+                    <div class="fk-header-dropdown-label">購物車</div>
+                    </div>
+            </li>
+        </ul>
+    </div>
+</div>

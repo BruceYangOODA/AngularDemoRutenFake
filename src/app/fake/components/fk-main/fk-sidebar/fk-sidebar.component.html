@@ -1,0 +1,24 @@
+<div class="fk-sidebar-panel">
+    <h2 class="fk-sidebar-title">熱門特區</h2>
+    <app-fk-sidebar-hotzone></app-fk-sidebar-hotzone>
+    <h2 class="fk-sidebar-title">分類目錄</h2>
+    <app-fk-sidebar-category *ngFor="let item of categoryBundles$ | async"
+        [categoryBundle]="item"></app-fk-sidebar-category>  
+    <h2 class="fk-view-all-catagory"><a href="">查看全部分類</a></h2>
+    <h2 class="fk-view-all-catagory"></h2> 
+    <div class="fk-sidebar-cvpay">
+        <h2 class="fk-sidebar-title">便利付款</h2>
+        <div class="fk-sidebar-cvpay-item">
+            <img class="fk-sidebar-cvpay-icon" src="/assets/images/pay_bank_4.gif" alt="">
+            <div class="fk-sidebar-cvpay-title"><a href="">玉山銀行網路ATM</a></div>
+        </div>
+        <div class="fk-sidebar-cvpay-item">
+            <img class="fk-sidebar-cvpay-icon2" src="/assets/images/atm_cardreader.png" alt="">
+            <div class="fk-sidebar-cvpay-title" style="margin-top: 20px;"><a href="">網路ATM</a></div>
+        </div>
+        <div class="fk-sidebar-package-section">
+            <div class="fk-sidebar-package-section-icon"></div>
+            <div class="fk-sidebar-package-section-title">包裝減量</div>
+        </div>
+    </div>
+</div>

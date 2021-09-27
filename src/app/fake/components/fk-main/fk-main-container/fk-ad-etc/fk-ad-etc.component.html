@@ -1,0 +1,133 @@
+<div *ngIf="adsDetails$ | async as adsDetails" style="display: flex;">
+    <div style="flex:1">
+        <img [src]="adsDetails.imgLinks[0]" alt="">
+    </div>
+    <div style="flex:1">
+        <img [src]="adsDetails.imgLinks[1]" alt="">
+    </div>
+</div>
+<div *ngIf="adsDetails$ | async as adsDetails" style="display: flex;">
+    <div style="flex:1; display: flex;">
+        <div style="flex:1; display: flex;">
+            <img [src]="adsDetails.imgLinks[2]" alt="">
+            <div>
+                <h4><a href="" style="color: #CC0000;">{{adsDetails.titles[0]}}</a></h4>                         
+                <p><a href="">
+                    <p>{{adsDetails.titles[1]}}</p>
+                    <p>{{adsDetails.titles[2]}}</p>
+                    <p>{{adsDetails.titles[3]}}</p>
+                    <p>{{adsDetails.titles[4]}}</p>
+                </a>
+                </p>
+                <ul style="list-style: none;">				
+                    <li class="li01">
+                        <a href="">
+                            <span style="color: #000000">{{adsDetails.titles[5]}}</span>
+                            <span style="color: #CC0000">{{adsDetails.titles[6]}}</span></a></li>				
+                    <li class="li02">
+                        <a href="">
+                            <span style="color:#CC0000">{{adsDetails.titles[7]}}</span>
+                            <span style="color:#000000">{{adsDetails.titles[8]}}</span></a></li>				
+                    <li class="li03">
+                        <a href="">
+                            <span style="color:#000000">{{adsDetails.titles[9]}}</span>
+                            <span style="color:#CC0000">{{adsDetails.titles[10]}}</span></a></li>				
+                    <li class="li04">
+                        <a href="">
+                            <span style="color:#CC0000">{{adsDetails.titles[11]}}</span>
+                            <span style="color:#000000">{{adsDetails.titles[12]}}</span></a></li>				
+                    <li class="li05">
+                        <a href="">
+                            <span style="color:#000000">{{adsDetails.titles[13]}}</span>
+                            <span style="color:#CC0000">{{adsDetails.titles[14]}}</span></a></li>			
+                </ul>
+            </div>
+        </div>
+        <div style="flex:1; display: block; margin: 15px;">
+            <div style="display: block;">                
+                <div style="display: flex;">
+                    <label><a href="">
+                        <img loading="lazy" 
+                            [src]="adsDetails.imgLinks[3]"
+                            width="80" 
+                            height="60"></a>
+                    </label>
+                    <div style="margin-left: 15px;">
+                        <h4><a href="">{{adsDetails.titles[15]}}</a></h4>
+                        <a href="">
+                            <p style="color:#CC0000">{{adsDetails.titles[16]}}</p>
+                            <p style="color:#CC0000">{{adsDetails.titles[17]}}</p>
+                        </a>
+                    </div>                  
+                </div>
+                <div style="display: flex;">
+                    <label><a href="">
+                        <img loading="lazy" 
+                            [src]="adsDetails.imgLinks[4]"
+                            width="80" 
+                            height="60"></a>
+                    </label>
+                    <div style="margin-left: 15px;">
+                        <h4><a href="">{{adsDetails.titles[18]}}</a></h4>
+                        <a href="">
+                            <p style="color:#CC0000">{{adsDetails.titles[19]}}</p>
+                            <p style="color:#CC0000">{{adsDetails.titles[20]}}</p>
+                        </a>
+                    </div>                  
+                </div>
+                <div style="display: flex;">
+                    <label><a href="">
+                        <img loading="lazy" 
+                            [src]="adsDetails.imgLinks[5]"
+                            width="80" 
+                            height="60"></a>
+                    </label>
+                    <div style="margin-left: 15px;">
+                        <h4><a href="">{{adsDetails.titles[21]}}</a></h4>
+                        <a href="">
+                            <p style="color:#CC0000">{{adsDetails.titles[22]}}</p>
+                            <p style="color:#CC0000">{{adsDetails.titles[23]}}</p>
+                        </a>
+                    </div>                  
+                </div>                
+            </div>
+        </div>
+    </div>
+</div>
+<div 
+    *ngIf="adsDetails$ | async as adsDetails"
+    style="background: #ddd; box-sizing: border-box; margin: 10px 0 0 0;
+            display: flex; padding: 5px 9px;">
+    <div style="flex:1; display: flex; background-color: #fff;">
+        <div>
+            <a href="">
+                <img loading="lazy" 
+                    [src]="adsDetails.imgLinks[6]" 
+                    width="70" 
+                    height="60"></a>
+        </div>        
+        <div style="flex:1">
+            <h4><a href="">
+                <span style="color:#C10066">{{adsDetails.titles[24]}}</span></a></h4>
+            <p><a href="">
+                <span style="color:#444444">{{adsDetails.titles[25]}}</span><br>
+                <span style="color:#444444">{{adsDetails.titles[26]}}</span></a></p>
+        </div>
+    </div>
+    <div style="flex:1; display: flex;background-color: #fff; margin-left: 5px;">
+        <div>
+            <a href="">
+                <img loading="lazy" 
+                    [src]="adsDetails.imgLinks[7]" 
+                    width="70" 
+                    height="60"></a>
+        </div>        
+        <div style="flex:1;">
+            <h4><a href="">
+                <span style="color:#C10066">{{adsDetails.titles[27]}}</span></a></h4>
+            <p><a href="">
+                <span style="color:#444444">{{adsDetails.titles[28]}}</span><br>
+                <span style="color:#444444">{{adsDetails.titles[29]}}</span></a></p>
+        </div>
+    </div>
+</div>

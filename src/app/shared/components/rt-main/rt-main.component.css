@@ -1,0 +1,169 @@
+
+.promo-bar ul,
+.promo-bar h2,
+.promo-bar h3 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 13px;
+  vertical-align: baseline;
+  background: transparent;
+}
+.promo-bar ul {list-style:none outside none;}
+
+.promo-bar a {text-decoration:none;}
+
+.promo-bar {
+  height: 32px;
+  width: 1250px;
+  margin-top: 0;
+}
+.promo-bar h2 {
+  display: inline-block;
+  width: 68px;
+  height: 26px;
+  background: url("https://www.ruten.com.tw/resource/loader.php?folder=component/theme/&file=bg-main-index.gif&v=20210922000201") -300px -360px no-repeat;
+  text-indent: -9999px;
+  vertical-align: top;
+  margin-top: 6px;
+}
+.promo-bar ul {
+  display: inline-block;
+  width: 1200px;
+  height: 27px;
+  margin-top: 6px;
+  overflow: hidden;
+}
+
+.promo-bar .cp {
+    display: inline-block;
+    height: 29px;
+    min-width: 72px;
+    width: auto;
+    background: none;
+    text-align: center;
+    display: block;
+    margin-right: 7px;
+    border-width: 1px;
+    border-left-width: 13px;
+    border-color: #333;
+    border-style: solid;
+    border-radius: 5px;
+    position: relative;
+}
+
+.promo-bar .cp h3:before {
+    left: -8px;
+    top: 14px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    border-left-color: #fff;
+    border-width: 3px;
+    margin-top: -3px;
+}
+
+.promo-bar .cp a {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 8px;
+    font-weight: 400;
+    padding: 7px 0;
+    padding: 9px 0 5px \9;
+    color: #7e7e7e;
+}
+
+.promo-bar .cp.promoAd {
+    background: none;
+    display: block;
+    border: 0;
+    min-width: auto;
+}
+
+.promo-bar .cp.promoAd h3:before {
+    display: none;
+}
+
+.promo-bar .promoAd a {
+    margin: 0;
+    padding: 0;
+}
+
+.promo-bar .cp-female {
+    border-color: #ff2888;
+}
+
+.promo-bar .cp-female a:hover {
+    color: #ff2888;
+}
+
+.promo-bar .cp-male {
+    border-color: #02a3ff;
+}
+
+.promo-bar .cp-male a:hover {
+    color: #02a3ff;
+}
+
+.promo-bar .cp-3c {
+    border-color: #7adf3e;
+}
+
+.promo-bar .cp-3c a:hover {
+    color: #7adf3e;
+}
+
+.promo-bar .cp-life {
+    border-color: #ff9900;
+}
+
+.promo-bar .cp-life a:hover {
+    color: #ff9900;
+}
+
+.promo-bar .cp-baby {
+    border-color: #bc64f9;
+}
+
+.promo-bar .cp-baby a:hover {
+    color: #bc64f9;
+}
+
+.promo-bar .cp-toy {
+    border-color: #ababab;
+}
+
+.promo-bar .cp-toy a:hover {
+    color: #ababab;
+}
+
+.promo-bar .cp-car {
+    border-color: #1ab4ab;
+}
+
+.promo-bar .cp-car a:hover {
+    color: #1ab4ab;
+}
+
+.promo-bar .cp-sport {
+    border-color: #6a80a7;
+}
+
+.promo-bar .cp-sport a:hover {
+    color: #6a80a7;
+}
+
+.promo-bar .cp-library {
+    border-color: #9e6f4a;
+}
+
+.promo-bar .cp-library a:hover {
+    color: #9e6f4a;
+}
+
+.promo-bar .cp-pchomepay {
+    border-color: #6EBF00
+}

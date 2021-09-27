@@ -1,0 +1,77 @@
+.fk-main-ad {
+    height: 26px;    
+    position: relative;    
+    /*right: 0;
+    top: 0;
+    flex: 0 0 80%;  */
+    vertical-align: top;       
+    display: flex;   
+    align-items: center;     
+}
+
+@media (min-width: 1400px) {
+    .fk-main-ad {
+        margin-left: 120px;
+    }
+}
+
+.fk-main-ad-wrap {   
+    /*overflow: hidden;
+     background-color: violet;
+     flex: 0 0 83%;
+     */    
+    min-width: 1250px;     
+    border-bottom: 3px solid #f90;    
+    display: flex;        
+    
+}
+
+.fk-main-ad-heading {
+    display: flex;         
+    flex: 1;      
+    margin: 0 10px;
+    font-size: 1rem;
+    height: 26px;
+    color: #FF9600;
+    padding: 0 5px 10px;
+    background: #fff;
+}
+
+.small {
+    display:block;
+    width: 5px;
+    height: 5px;
+    font-size: 5px;    
+    margin-left: -0.7rem;
+    padding-top: 3px;
+    
+}
+.fk-main-ad-heading-icon {
+    /*content: '\025B8';*/
+    /*display: inline-block;*/
+    display:inline-block;
+    margin-left: 5px;    
+    margin-top: 1px;
+    height: 1rem;
+    width: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    font-size: 1.5em;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 50%;
+    color: #FF9600;
+    vertical-align: middle;
+}
+
+.fk-main-ad-list {       
+    flex: 1;      
+    display: block; 
+    position: relative;     
+    width: 230px; 
+    height: 26px;         
+}
+
+.fk-main-ad-list-item {
+    position: absolute;    
+    right: 0;    
+}

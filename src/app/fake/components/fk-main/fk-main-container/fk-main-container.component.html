@@ -1,0 +1,50 @@
+<div class="fk-main-container">
+    <div class="fk-main-container-text-ad">
+        <ul class="fk-main-container-text-ad-ul">
+            <li *ngFor="let item of textAds | async" class="fk-main-container-text-ad-li">
+                <a href="">{{item}}</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="fk-main-container-columns-2-1">
+        <div class="fk-main-container-columns-l">
+            <app-slidebox [SlideDetails]="Slide1$ | async"></app-slidebox>
+            <app-fk-ad-etc></app-fk-ad-etc>
+        </div>
+
+
+
+        <div class="fk-main-container-columns-r">
+            <div class="fk-main-container-columns-r-wrap">
+                <div style="flex:1;">
+                    <app-slidebox [SlideDetails]="Slide2$ | async"></app-slidebox>
+                </div>
+                <div style="flex:1; margin-left: 5px;">
+                    <app-slidebox [SlideDetails]="Slide3$ | async"></app-slidebox>
+                </div>
+            </div>
+            <div class="fk-main-container-columns-r-wrap" style="margin-top: 5px;">
+                <div style="flex:1;">
+                    <app-slidebox [SlideDetails]="Slide4$ | async"></app-slidebox>
+                </div>
+                <div style="flex:1; margin-left: 5px;">
+                    <app-slidebox [SlideDetails]="Slide5$ | async"></app-slidebox>
+                </div>
+            </div>
+            <div class="fk-main-container-columns-r-wrap">
+                <div class="fk-main-container-columns-r-wrap-l">
+                    <app-slidebox [SlideDetails]="Slide6$ | async"></app-slidebox>
+                </div>
+                <div class="fk-main-container-columns-r-wrap-r">
+                    <app-slidebox [SlideDetails]="Slide7$ | async"></app-slidebox>
+                </div>
+            </div>
+            <div class="fk-main-container-columns-r-wrap">
+                <div class="fk-main-container-columns-r-wrap-l">
+                    <app-slidebox [SlideDetails]="Slide8$ | async"></app-slidebox>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

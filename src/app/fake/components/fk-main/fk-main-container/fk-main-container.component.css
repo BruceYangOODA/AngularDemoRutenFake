@@ -1,0 +1,45 @@
+.fk-main-container {
+    background: #fff;
+}
+
+.fk-main-container-text-ad {
+    background: #fff;
+    background: linear-gradient(to bottom,#fff 0,#fff 70%,#ddd 100%);    
+    border: 1px solid #ddd;
+    font-size: 15px;
+    padding: 4px 8px 5px 8px;
+}
+
+.fk-main-container-text-ad-ul {
+    list-style: none outside none;
+}
+
+.fk-main-container-text-ad-li {
+    display: inline;
+    padding: 0 16px 0 0;
+}
+
+.fk-main-container-columns-2-1 {
+    display: flex;    
+}
+.fk-main-container-columns-l {
+    flex:1;
+    min-width: 430x;    
+    padding: 10px 0 0 10px;
+}
+.fk-main-container-columns-r {    
+    flex:1;
+    min-width: 430px;    
+    padding: 10px 0 0 10px;    
+}
+
+.fk-main-container-columns-r-wrap {
+    display: flex;
+}
+
+.fk-main-container-columns-r-wrap-l {
+    min-width: 240px;
+}
+.fk-main-container-columns-r-wrap-r {
+    min-width: 240px;
+}

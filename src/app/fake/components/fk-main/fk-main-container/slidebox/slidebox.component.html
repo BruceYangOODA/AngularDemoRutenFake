@@ -1,0 +1,16 @@
+<div *ngIf="SlideDetails" 
+    class="fk-slidebox-container">
+    <ul class="fk-slidebox-ul">
+        <li *ngFor="let item of SlideDetails.slideTags; let i = index" class="fk-slidebox-li"
+            [ngClass]="{'view':slideIndex==i,'hide':slideIndex!=i}"
+            (mouseenter)="slideTagHover(i)"
+            >
+            {{item}}
+        </li>
+    </ul>
+    <div *ngFor="let item of SlideDetails.slidePicLinks; let i = index"
+        style="width: 100%; height: 100%;">
+        <img *ngIf="slideIndex==i" [src]="item" alt="" 
+            class="fk-slide-img">
+    </div>    
+</div>

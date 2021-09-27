@@ -1,0 +1,25 @@
+.fk-columns {
+    display: flex;
+
+    min-width: 1200px;  
+    background: #fff; 
+}
+
+.fk-main-content-wrap {
+    position: relative;              
+    display: flex;    
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 3px;    
+}
+
+@media (min-width: 1300px) {
+    .fk-main-content-wrap {
+        margin-left: 120px;
+    }
+}
+
+**:focus {
+    outline: none;
+    list-style: none;
+}

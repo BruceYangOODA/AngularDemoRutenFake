@@ -1,0 +1,15 @@
+.fk-sidebar-hotzone-container {
+    border: 1px solid #ddd;
+    border-top: 0;
+    min-height: 134px;
+}
+
+.fk-sidebar-hotzone-menu-ul {
+    background: #fff;
+    padding: 5px 0;
+    list-style: none;
+}
+
+.fk-sidebar-hotzone-menu-li {
+    padding-left: 5px;
+}

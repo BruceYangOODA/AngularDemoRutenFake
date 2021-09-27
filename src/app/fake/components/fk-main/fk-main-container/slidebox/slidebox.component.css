@@ -1,0 +1,41 @@
+.fk-slidebox-container {
+    max-height: 100%;
+    max-width: 100%;
+}
+.fk-slidebox-ul {
+    background: #ddd;
+    list-style: none outside none;
+    display: flex;
+}
+
+.fk-slidebox-li {
+    background: #fff;
+    border: solid 1px #ddd;    
+    padding: 5px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 28px;
+    flex: 1;
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    
+}
+
+.fk-slidebox-li.hide {
+    color: #818181;
+}
+.fk-slidebox-li.view {
+    color: #fff;
+    cursor: default;
+    background: #faac72;
+    background: linear-gradient(to bottom,#faac72 0,#f96d12 70%,#f25307 100%);   
+     
+}
+
+.fk-slide-img {
+    max-width: max-content;
+    max-height: max-content;
+}
+

@@ -1,0 +1,18 @@
+<div class="fk-sidebar-category-container">
+    <div class="fk-sidebar-category-icon" [style]="getCustomerStyle()"></div>
+    <div class="fk-sidebar-category-container-wrap">
+        <div class="fk-sidebar-category-title" (mouseenter)="categoryTagEnter()" (mouseleave)="categoryTagLeave()">
+            <a href="">{{ categoryBundle.categoryTitle }}</a>
+            <ul *ngIf="categoryTitleHover && categoryBundle.categoryItems.length>0" class="fk-sidebar-category-submenu">
+                <li *ngFor="let item of categoryBundle.categoryItems" class="fk-sidebar-category-submenu-item">
+                    <a href="">{{item}}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <span class="fk-hot-sale">
+        <span class="fk-hot-sale-arrow">▸</span>
+        <a href="" class="fk-link" [title]="getHotTitle()">熱銷</a>
+    </span>
+</div>

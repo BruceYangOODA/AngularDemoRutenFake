@@ -1,0 +1,72 @@
+<div class="fk-header-top">
+    <div class="fk-header-inner">
+        <div class="fk-header-part">
+            <ul class="fk-header-ul">
+                <li class="fk-header-li">
+                    <a class="fk-header-link" href="" title="前往公告區">公告</a>
+                </li>
+                <li class="fk-header-li" (mouseenter)="serviceCenterHover()" (mouseleave)="serviceCenterLeave()">
+                    <a class="fk-header-link" href="" title="前往露天拍賣客戶服務中心">客服中心
+                        </a>
+
+                    <div *ngIf="serviceCenterTag" class="fk-header-dropdown">
+                        <ul class="fk-header-dropdown-menu">
+                            <li class="fk-header-dropdown-items">
+                                <a href="" title="客服中心">客服中心</a>
+                            </li>
+                            <li class="fk-header-dropdown-items">
+                                <a href="" title="海外代購售後服務">海外代購售後服務</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="fk-header-li"><a class="fk-header-link" href="" title="前往賣家中心">賣家中心</a></li>
+            </ul>
+        </div>
+        <div class="fk-header-part">
+            <div class="fk-header-daigou">
+                <a 
+                    class="fk-header-link fk-header-daigou-ebay" 
+                    href="#"
+                    title="前往海外代購EBAY專頁"></a>
+            </div>
+            <div class="fk-header-daigou">
+                <a 
+                class="fk-header-link fk-header-daigou-gmarket" 
+                href=""
+                title="前往海外代購Gmarket專頁"></a>
+            </div>
+            <div class="fk-header-daigou fk-header-daigou-ebayJP">
+                <a 
+                    class="fk-header-link" 
+                    href=""
+                    title="前往海外代購日本直送專頁"></a>
+            </div>
+            <div class="fk-header-login fk-header-top-divider">                
+            </div>
+            <div *ngIf="isLogin" (mouseenter)="accountTagHover()" (mouseleave)="accountTagLeave()">
+                <a class="fk-header-topnav-link" href="" title="前往個人賣場">{{userId}}
+                    <span></span><i class="fa fa-angle-down"></i></a>  
+                <div 
+                    *ngIf="accountTag"
+                    class="fk-header-dropdown2">
+                    <ul>
+                        <li class="fk-header-dropdown-items">
+                            <a class="fk-header-link" href="" title="前往個人賣場">我的賣場</a>
+                        </li>
+                        <li class="fk-header-dropdown-items">
+                            <a class="fk-header-link" href="" title="前往評價頁">我的評價</a>
+                        </li>
+                        <li class="fk-header-dropdown-items">
+                            <a class="fk-header-link" href="" title="登出頁面">登出</a>
+                        </li>
+                    </ul>
+                </div>              
+            </div>
+            <div *ngIf="!isLogin">
+                <a class="fk-header-topnav-link" href="" title="免費註冊">免費註冊</a>
+                <a class="fk-header-topnav-link" href="" title="登入頁面">登入</a>
+            </div>            
+        </div>
+    </div>
+</div>

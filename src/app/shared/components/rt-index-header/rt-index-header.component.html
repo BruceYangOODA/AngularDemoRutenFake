@@ -1,0 +1,236 @@
+<div class="index-header rt-header">
+    <div class="index-header-main rt-header-inner">
+        <div class="rt-header-heading">
+            <h1
+                itemscope=""
+                itemtype="http://schema.org/WPHeader">
+                <a 
+                    href="https://www.ruten.com.tw" 
+                    class="rt-header-logo docs-creator"
+                    title="前往露天拍賣首頁" 
+                    itemprop="url">
+                    <span class="rt-logo-title hide" itemprop="name">
+                        露天拍賣-台灣 NO.1 拍賣網站</span>
+                </a>
+            </h1>
+            <div class="index-header-total-items">
+                <div class="total-items-icon"></div>
+                <div 
+                    class="total-items-count count"
+                    style="width: 90px;"                
+                    >{{ ItemsCount | number}}</div>                
+                <div class="total-items-unit">件商品</div>
+            </div>
+        </div>
+        <div class="index-header-search">
+            <div 
+                id="searchForm"
+                class="rt-header-search">
+                <div class="rt-header-search-keyword-wrap search-bar-keyword-wrap">
+                    <input 
+                        id="searchKeyword"
+                        name="q"
+                        type="text" 
+                        accesskey="4"
+                        autocomplete="off" 
+                        placeholder="搜尋露天拍賣商品"
+                        class="rt-header-search-input"
+                        >
+                    <ul 
+                        id="suggestions"
+                        class="search-bar-keyword-list"></ul>
+                </div>
+                <div class="rt-header-search-select-wrap rt-mr">
+                    <select 
+                        id="searchType" 
+                        class="rt-header-search-select"
+                        title="搜尋項目下拉選單">
+                        <option 
+                            value="0" 
+                            selected="selected"
+                            class="select-type-option"
+                            >搜全站</option>
+                        <option 
+                            value="1" 
+                            class="select-type-option"
+                            >搜帳號</option>
+                    </select>
+                    <div class="rt-header-search-select-icon"></div>
+                </div>
+                <input 
+                    id="searchFormSubmit"
+                    type="button" 
+                    class="rt-header-search-submit"
+                    title="搜尋">
+            </div>
+            <div class="index-header-hot-search">
+                <ul class="index-header-hot-search-list">   
+                    <li 
+                        *ngFor="let item of HotSearchItems"
+                        class="index-header-hot-search-item">
+                        <a 
+                            href="#" 
+                            class="docs-creator"
+                            target="_blank"
+                            [title]=item>{{ item }}</a>
+                    </li>                          
+                </ul>
+            </div>            
+        </div>
+        <ul class="index-header-nav rt-nav">
+            <li class="rt-nav-item">
+                <div 
+                    id="onShelfOpts"
+                    class="rt-header-sell rt-header-dropdown-wrap">
+                    <a                         
+                        id="header_sehll"
+                        href="#" 
+                        rel="index"
+                        class="rt-nav-link docs-creator"
+                        title="我要賣東西">
+                        <div class="rt-nav-icon-wrap">
+                            <span class="rt-header-sell-icon"></span>
+                        </div>
+                        <div class="rt-nav-name" itemprop="name">賣東西</div>
+                    </a>
+                    <div class="rt-header-dropdown">
+                        <ul class="rt-header-dropdown-menu">
+                            <li class="dropdown-menu-item">
+                                <a 
+                                    href="https://mybidu.ruten.com.tw/upload/item_initial.php" 
+                                    class="dropdown-menu-link docs-creator">單品上架</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a 
+                                    href="https://mybidu.ruten.com.tw/upload/isbn.htm" 
+                                    class="dropdown-menu-link docs-creator">書籍&nbsp;ISBN&nbsp;上架</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a 
+                                    href="https://mybidu.ruten.com.tw/upload/easy_text2.htm?g_mode=B" 
+                                    class="dropdown-menu-link docs-creaotr">超簡易上架</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a 
+                                    href="https://mass.ruten.com.tw/y/start.php" 
+                                    class="dropdown-menu-link docs-creaotor">Excel&nbsp;上架</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="rt-nav-item">
+                <div class="rt-header-mybid rt-header-dropdown-wrap">
+                    <a 
+                        id="header_mybid"
+                        href="#" 
+                        class="rt-nav-link docs-creator"
+                        title="進入我的拍賣管理中心">
+                        <div class="rt-nav-icon-wrap">
+                            <span class="rt-header-mybid-icon"></span>
+                        </div>
+                        <div class="rt-nav-name" itemprop="name">我的拍賣</div>
+                    </a>
+                    <div class="rt-header-dropdown">
+                        <div class="rt-header-dropdown-grid">
+                            <div class="grid-item-width-1-2">
+                                <h3 class="rt-header-dropdown-title">買家</h3>
+                                <ul class="rt-header-dropdown-menu">
+                                    <li class="dropdown-menu-item">
+                                        <a 
+                                            href="https://mybid.ruten.com.tw/master/my.php?l_type=buy_notpaid" 
+                                            class="dropdown-menu-link docs-creator">待結帳</a>
+                                    </li>
+                                    <li class="dropdown-menu-item">
+                                        <a 
+                                            href="https://mybid.ruten.com.tw/master/my.php?l_type=buy_full" 
+                                            class="dropdown-menu-link docs-creator">已購買</a>
+                                    </li>
+                                    <li class="dropdown-menu-item">
+                                        <a 
+                                            href="https://mybid.ruten.com.tw/master/my.php?l_type=buy_tracing" 
+                                            class="dropdown-menu-link docs-creator">追蹤中</a>
+                                    </li>
+                                    <li class="dropdown-menu-item">
+                                        <a 
+                                            href="https://mybid.ruten.com.tw/master/my_shipping_voucher.php" 
+                                            class="dropdown-menu-link docs-creator">我的優惠券</a>
+                                    </li>
+                                </ul>
+                            </div>                        
+                            <div class="grid-item-width-1-2">
+                                <h3 class="rt-header-dropdown-title">賣家</h3>
+                                <ul class="rt-header-dropdown-menu">
+                                    <li class="dropdown-menu-item">
+                                        <a 
+                                            href="https://seller.ruten.com.tw" 
+                                            class="dropdown-menu-link docs-creator">賣家中心</a>
+                                    </li>
+                                    <li class="dropdown-menu-item">
+                                        <a 
+                                            href="https://mybid.ruten.com.tw/master/my.php?l_type=sel_wait_confirm" 
+                                            class="dropdown-menu-link docs-creator">訂單管理</a>
+                                    </li>
+                                    <li class="dropdown-menu-item">
+                                        <a 
+                                            href="https://mybid.ruten.com.tw/master/my.php?l_type=sel_selling" 
+                                            class="dropdown-menu-link docs-creator">商品管理</a>
+                                    </li>
+                                    <li class="dropdown-menu-item">
+                                        <a 
+                                            href="https://point.ruten.com.tw/es_account/index.php" 
+                                            class="dropdown-menu-link docs-creator">收款管理中心</a>
+                                    </li>
+                                    <li class="dropdown-menu-item">
+                                        <a 
+                                            href="https://point.ruten.com.tw/account/fee.php"
+                                            class="dropdown-menu-link docs-creator" >計費中心</a>
+                                    </li>
+                                    <li class="dropdown-menu-item">
+                                        <a
+                                            href="https://mybid.ruten.com.tw/datacube/"
+                                            class="dropdown-menu-link docs-creator" >錢進趨勢</a>
+                                    </li>
+                                    <li class="dropdown-menu-item dropdown-menu-item-buyad">
+                                        <a 
+                                            href="https://pub.ruten.com.tw/adb/index.html" 
+                                            class="dropdown-menu-link docs-creator"
+                                            rel="nofollow" 
+                                            title="購買廣告" >
+                                            <span itemprop="name">買廣告</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li 
+                id="rtChatMountPoint"
+                class="rt-nav-item">
+                <div class="rt-header-messenger rt-nav-link rt-messenger-inbox">
+                    <div class="rt-messenger-icon-anchor rt-nav-icon-wrap">
+                        <div class="rt-messenger-icon-static rt-messenger-chat-icon"></div>
+                        <div class="rt-messenger-inbox-notification-dot"></div>
+                        <span class="item-count" id="unread-message-count" style="display: none;"></span>
+                    </div>      
+                    <div class="rt-nav-name">
+                        露露通
+                    </div>      
+                </div>                
+            </li>
+            <li class="rt-nav-item">
+                <div class="rt-header-shopping-cart">
+                    <a 
+                        href="https://mybid.ruten.com.tw/deliver/list_cart.php" 
+                        class="rt-nav-link docs-creator">
+                        <div class="shopping-cart rt-nav-icon-wrap">
+                            <span class="rt-shopping-cart-icon"></span>
+                            <span class="item-count" id="goods-count" style="display: none;"></span>
+                        </div>
+                        <div class="rt-nav-name">購物車</div></a>
+                </div>
+            </li>
+        </ul>        
+    </div>
+</div>
